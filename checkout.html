@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BINDAZZ || FASHION START FROM HERE</title>
+    <!-- bootstrap 5.3 css start -->
+    <link rel="stylesheet" href="./asset/css/bootstrap.min.css">
+    <!-- bootstrap 5.3 css end -->
+    <!-- custom css start -->
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <!-- custom css end -->
+    <!-- remix icon including start -->
+    <link rel="stylesheet" href="./asset/font/remixicon/remixicon.css">
+    <!-- remix icon including end -->
+    <!-- owl carousel css start -->
+    <link rel="stylesheet" href="./asset/owl/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./asset/owl/dist/assets/owl.theme.default.css">
+    <!-- owl carousel css end -->
+    <!-- aos animation css start -->
+    <link rel="stylesheet" href="./asset/aos/demo/css/styles.css">
+    <!-- aos animation css end -->
+    <!-- jquery including start -->
+    <script src="./asset/js/jquery-3.7.1.min.js"></script>
+    <!-- jquery including end -->
+</head>
+
+<body>
+    <!-- navbar start -->
+    <nav>
+        <div class="navbar-bindazz p-4 px-5">
+            <div class="navbar-item-container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex gap-4 selection-container">
+                        <div class="d-flex gap-2">
+                            <img src="./asset/img/web_img/usa-flag.png" alt="USA Flag" loading="lazy">
+                            <select class="lang-selector bg-transparent">
+                                <option value="eng" selected>English</option>
+                            </select>
+                        </div>
+                        <select class="curr-selector bg-transparent">
+                            <option value="bdt" selected>BDT</option>
+                        </select>
+                    </div>
+                    <div class="logo-box">
+                        <a href="./index.html">
+                            <img src="./asset/img/logo.png" alt="Logo" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="quick-option-box d-flex gap-3">
+                        <div class="search-box d-flex">
+                            <input class="search-box flex-fill bg-transparent" type="text" placeholder="Search Product">
+                            <i class="ri-search-line"></i>
+                        </div>
+                        <button class="menu-box lora bg-transparent">
+                            <i class="ri-menu-line"></i> MENU
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cat-item-box">
+            <div class="category-item d-flex flex-wrap justify-content-between align-content-center gap-3 p-4 px-5">
+                <a href="#">Item 1</a>
+                <a href="#">Item 2</a>
+                <a href="./product-list.html">Trending</a>
+                <a href="./contact.html">Contact & Location</a>
+                <a href="./cart.html">Cart</a>
+                <a href="./login.html">Login</a>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- main body start from here -->
+    <main>
+        <div class="p-4">
+            <!-- cart page content start here -->
+            <div class="step-counter">
+                <div class="progress px-4">
+                    <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="0" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+                <div class="step-container d-flex justify-content-between">
+                    <div class="step-box d-flex flex-column align-items-center">
+                        <div class="step-circle active">1</div>
+                        <h6>Cart</h6>
+                    </div>
+                    <div class="step-box d-flex flex-column align-items-center">
+                        <div class="step-circle active">2</div>
+                        <h6>Checkout</h6>
+                    </div>
+                    <div class="step-box d-flex flex-column align-items-center">
+                        <div class="step-circle">3</div>
+                        <h6>Payment</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 p-3">
+                    <div class="cart-list">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex flex-wrap justify-content-start align-items-end gap-3 pt-3">
+                                    <h4 class="lora">Final Items</h4>
+                                    <!-- <small class="roboto">Review your cart</small> -->
+                                </div>
+                                <hr>
+                                <div class="table-responsive lora">
+                                    <table class="table table-striped align-middle">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center">Product</th>
+                                                <th class="text-center">Price</th>
+                                                <th class="text-center">Quantity</th>
+                                                <th class="text-center">Subtotal</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="product-info position-relative p-3">
+                                                        <div class="d-flex gap-2 align-items-center">
+                                                            <img src="./asset/img/web_img/p-1.jpg" alt="Product Thumb"
+                                                                loading="lazy">
+                                                            <h6>The Cream Full Jacket</h6>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="text-center text-nowrap">$ 1,999</td>
+                                                <td class="text-center">2</td>
+                                                <td class="text-end text-nowrap pe-4">$ 3,998</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="product-info position-relative p-3">
+                                                        <div class="d-flex gap-2 align-items-center">
+                                                            <img src="./asset/img/web_img/p-2.jpg" alt="Product Thumb"
+                                                                loading="lazy">
+                                                            <h6>The Orange Suit Jacket - For Female</h6>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="text-center text-nowrap">$ 1,200</td>
+                                                <td class="text-center">2</td>
+                                                <td class="text-end text-nowrap pe-4">$ 3,600</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <a href="#" class="btn p-0 fw-semibold">
+                                            <!-- <i class="ri-close-line"></i>Clear Cart -->
+                                        </a>
+                                        <p class="m-0 text-muted">Total item: <strong class="text-dark">2</strong></p>
+                                        <p class="m-0 text-muted">Total quantity: <strong class="text-dark">5</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 p-3">
+                    <div class="cart-price-info lora">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="pt-3">Cart Total</h4>
+                                <hr>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="text-muted">Subtotal</p>
+                                    <strong class="text-nowrap">$ 7,598</strong>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <p class="text-muted">Shipping</p>
+                                    <strong class="text-nowrap">$ 0</strong>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <p class="text-muted">Coupon discount</p>
+                                    <strong class="text-nowrap">$ 0</strong>
+                                </div>
+                                <hr>
+                                <div class="d-flex justify-content-between pb-3">
+                                    <strong>Total Payable</strong>
+                                    <strong class="text-nowrap">$ 7,598</strong>
+                                </div>
+                                <a href="#" class="btn primary w-100">Process to pay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 p-3">
+                    <div class="accordion lora" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Manage Shipping Address
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <h5>MD Jone Doe Sulaiman</h5>
+                                    <p class="m-0 py-1 text-muted">01987654321</p>
+                                    <p class="m-0 py-1 text-muted">ridoysheikh15@gmail.com</p>
+                                    <p class="m-0 pt-1 text-muted">50/3 Nasir sarak, sonadanga, khulna</p>
+                                    <p class="m-0 text-muted">Khulna sadar - 9100</p>
+                                    <p class="m-0 text-muted">Bangladesh</p>
+                                    <p class="text-end">
+                                        <button type="button" class="btn fw-semibold" data-bs-toggle="modal"
+                                            data-bs-target="#shipping_address">
+                                            <i class="ri-quill-pen-fill"></i> Update Address
+                                        </button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 p-3">
+                    <div class="accordion lora" id="accordionExample2">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Manage Billing Address
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <h5>MD Jone Doe Sulaiman</h5>
+                                    <p class="m-0 py-1 text-muted">01987654321</p>
+                                    <p class="m-0 py-1 text-muted">ridoysheikh15@gmail.com</p>
+                                    <p class="m-0 pt-1 text-muted">50/3 Nasir sarak, sonadanga, khulna</p>
+                                    <p class="m-0 text-muted">Khulna sadar - 9100</p>
+                                    <p class="m-0 text-muted">Bangladesh</p>
+                                    <p class="text-end">
+                                        <button type="button" class="btn fw-semibold" data-bs-toggle="modal"
+                                            data-bs-target="#billing_address">
+                                            <i class="ri-quill-pen-fill"></i> Update Address
+                                        </button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- cart page content end here -->
+        </div>
+    </main>
+    <!-- main body end from here -->
+
+    <!-- modal for Shipping address start -->
+    <div class="modal fade" id="shipping_address" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Update Shipping Address</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal for Shipping address end -->
+    <!-- modal for billing address start -->
+    <div class="modal fade" id="billing_address" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Update Billing Address</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal for billing address end -->
+
+    <!-- footer start here -->
+    <footer>
+        <div class="footer-box bg-black text-light lora">
+            <div class="row m-0">
+                <div class="col-md-3 p-4 pb-5 border-bottom border-end border-secondary">
+                    <div class="company-info d-flex flex-column gap-2">
+                        <h4 class="text-uppercase">Company</h4>
+                        <a href="#">Find a location nearest you.</a>
+                        <a href="facebook.com/bindazz/stories" r class="text-decoration-underline">See Our Stores</a>
+                        <a href="tel:+8801987654321">+88 (0)1987654321</a>
+                        <a href="mailto:hello@binduzz.com">hello@binduzz.com</a>
+                    </div>
+                </div>
+                <div class="col-md-3 p-4 pb-5 border-bottom border-end border-secondary">
+                    <div class="information-info d-flex flex-column gap-2">
+                        <h4 class="text-uppercase">Information</h4>
+                        <a href="./profile.html">My Account</a>
+                        <a href="./login.html">Login</a>
+                        <a href="./cart.html">My cart</a>
+                        <a href="./wishlist.html">My Wishlist</a>
+                    </div>
+                </div>
+                <div class="col-md-3 p-4 pb-5 border-bottom border-end border-secondary">
+                    <div class="service-info d-flex flex-column gap-2">
+                        <h4 class="text-uppercase">Service</h4>
+                        <a href="#">About Us</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Delivery Info</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms & Condition</a>
+                    </div>
+                </div>
+                <div class="col-md-3 p-4 pb-5 border-bottom border-end border-secondary">
+                    <div class="subs-info d-flex flex-column gap-2">
+                        <h4 class="text-uppercase">Subscribe</h4>
+                        <p>
+                            Enter your email below to be the first to know about new collections and product launches.
+                        </p>
+                        <div class="bg-white text-dark px-2 d-flex align-items-center rounded-2">
+                            <i class="ri-mail-line"></i>
+                            <input type="mail" class="form-control border-0" name="mail" id="mail" placeholder="Your Mail">
+                            <button type="submit" class="btn p-0">
+                                <i class="ri-arrow-right-line"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-4">
+                <div class="footer-bottom">
+                    <div class="d-flex flex-wrap justify-content-between align-items-center">
+                        <div class="payment-list d-flex gap-2">
+                            <img src="./asset/img/web_img/paypal.webp" alt="Paypal" loading="lazy">
+                            <img src="./asset/img/web_img/ssl.png" alt="ssl" loading="lazy">
+                            <img src="./asset/img/web_img/social.png" alt="Social" loading="lazy">
+                        </div>
+                        <p class="m-0 text-secondary">© bindazz 2025</p>
+                        <div class="d-flex gap-3">
+                            <a href="#">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                            <a href="#">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                            <a href="#">
+                                <i class="ri-twitter-x-fill"></i>
+                            </a>
+                            <a href="#">
+                                <i class="ri-whatsapp-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end here -->
+
+    <!-- custom js start -->
+    <script src="./asset/js/index.js"></script>
+    <!-- custom js end -->
+    <!-- bootstrap 5.3 js start -->
+    <script src="./asset/js/bootstrap.bundle.min.js"></script>
+    <!-- bootstrap 5.3 js end -->
+    <!-- owl carousel js start -->
+    <script src="./asset/owl/dist/owl.carousel.min.js"></script>
+    <!-- owl carousel js end -->
+</body>
+
+</html>

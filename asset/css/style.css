@@ -1,0 +1,434 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Merriweather:opsz@18..144&family=Roboto&display=swap');
+
+/* All variable start from here */
+:root {
+    --color: #fff;
+    --primary: #432c83;
+    --dark: #191919;
+    --fs-page-title-px: 172px;
+    --fs-page-title-vw: 13vw;
+    --fs-title: 36px;
+    --fs-subtitle: 24px;
+    --fs-body: 20px;
+    --fw-light: 300;
+    --fw-md: 500;
+    --fw-bold: 700;
+    --ff-lora: "Lora", serif;
+    --ff-weather: "Merriweather", serif;
+    --ff-roboto: "Roboto", serif;
+    --ratio-square: 1/1;
+    --ratio-vertical: 4/5;
+    --ratio-horizontal: 6/4;
+    --curve-sm: 8px;
+    --curve-lg: 24px;
+    --curve-circle: 999px;
+    --shadow: 4px 14px 34px #1c294d77;
+}
+
+/* All variable end from here */
+
+/* All font classes start here */
+.lora {
+    font-family: "Lora", serif;
+}
+
+.weather {
+    font-family: "Merriweather", serif;
+}
+
+.roboto {
+    font-family: "Roboto", sans-serif;
+}
+
+/* All font classes end here */
+
+/* custom library start here */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+main {
+    min-height: 100dvh;
+}
+
+.primary {
+    color: var(--color);
+    background-color: var(--primary);
+}
+
+.white {
+    color: var(--primary);
+    background-color: var(--color);
+}
+
+.dark {
+    color: var(--color);
+    background-color: var(--dark);
+}
+
+.section-gap {
+    padding-block: 120px;
+}
+
+.bg-transparent {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+/* custom library end here */
+
+/* nav css start here */
+.selection-container img {
+    width: 30px;
+    height: 18px;
+}
+
+.logo-box img {
+    width: 100%;
+    max-width: 190px;
+}
+
+.search-box {
+    width: 140px;
+}
+
+.search-box:focus {
+    outline: none;
+}
+
+/* nav css end here */
+
+/* landing page css start */
+.grid-box {
+    padding: 0;
+    height: 100vh;
+}
+
+.grid-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-box .absolute-box {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 24px;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    transition: 300ms all ease;
+}
+
+.grid-box:hover .absolute-box {
+    bottom: 50%;
+    transition: 500ms all ease;
+    transform: translateY(50%);
+}
+
+.grid-box:hover .absolute-box h4 { 
+    padding: 16px 48px;
+    display: inline-block;
+    border: 2px solid #fff;
+    transition: 500ms all ease; 
+    border-radius: var(--curve-circle);
+}
+
+.absolute-box h4:hover {
+    color: #191919;
+    background-color: #f1f1f1;
+}
+/* landing page css end */
+
+/* home page css start */
+.carousel-item img {
+    object-fit: cover;
+    filter: grayscale(0);
+    height: calc(100vh - 90px);
+}
+
+.carousel-item.active img {
+    scale: 1.15;
+    transition: 1500ms all ease;
+}
+
+.carousel-item.active img {
+    filter: grayscale(1);
+    transition: 2500ms all ease;
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 8%;
+    left: auto;
+    text-align: start;
+    color: #fff;
+}
+
+.product-section {
+    top: 0;
+    position: sticky;
+    overflow-y: auto;
+    padding-block: 24px;
+    background-color: #fff;
+}
+
+.product-section .subtitle {
+    position: relative;
+}
+
+.product-section .subtitle::before, .product-section .subtitle::after { 
+    top: 50%;
+    width: 36px;
+    height: 1px;
+    content: " ";
+    position: absolute;
+    background-color: #363636;
+}
+
+.product-section .subtitle::before {
+    right: 116%;
+}
+
+.product-section .subtitle::after {
+    left: 116%;
+}
+
+.home-card-thumb img {
+    object-fit: cover;
+    transition: 300ms all ease-in;
+    aspect-ratio: var(--ratio-vertical);
+}
+
+.home-card-thumb .hover-img {
+    display: none;
+    transition: 300ms all ease-in;
+}
+
+.home-card-thumb:hover img {
+    display: none;
+    transition: 300ms all ease-in;
+}
+
+.home-card-thumb:hover .hover-img {
+    display: block;
+    transition: 300ms all ease-in;
+}
+/* home page css end */
+
+/* product listing page css start here */
+.product-card {
+    border: 1px solid #191919;
+}
+
+.product-thumb {
+    overflow: hidden;
+}
+
+.product-thumb img {
+    width: 100%;
+    object-fit: cover;
+    transition: 300ms all ease;
+    aspect-ratio: var(--ratio-vertical);
+}
+
+.product-overlay {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 0%;
+    overflow: hidden;
+    position: absolute;
+    transition: 300ms all ease;
+}
+
+.product-card-body:hover .product-thumb img {
+    transform: scale(1.10) rotate(2deg);
+    transition: 750ms all ease;
+}
+
+.product-card-body:hover .product-overlay {
+    height: 20%;
+    transition: 500ms all ease;
+}
+
+/* product listing page css end here */
+
+/* product details page css start here */
+.product-img-box {
+    gap: 24px;
+    display: flex;
+}
+
+.product-img-box>.position-relative {
+    flex-basis: 10%;
+}
+
+.product-img-scroller {
+    gap: 24px;
+    display: flex;
+    height: 400px;
+    overflow-y: auto;
+    flex-direction: column;
+}
+
+.product-img-scroller.height {
+    height: auto;
+}
+
+.product-img-scroller::-webkit-scrollbar {
+    width: 3px;
+}
+
+.product-img-scroller::-webkit-scrollbar-thumb {
+    width: 3px;
+    background-color: #aaa;
+    border-radius: var(--curve-circle);
+}
+
+.product-img-scroller img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: var(--ratio-vertical);
+}
+
+.scroll-down-arrow {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 64px;
+    display: grid;
+    position: absolute;
+    place-content: center;
+    background-image: linear-gradient(rgb(255 255 255 / 0%), rgb(255 255 255 / 100%), rgb(255 255 255 / 100%));
+}
+
+.scroll-down-arrow.rotate {
+    transform: rotate(180deg);
+}
+
+.img-thumb-preview {
+    flex-basis: 90%;
+}
+
+.img-thumb-preview img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: var(--ratio-vertical);
+}
+
+.product-attr-color {
+    width: 100%;
+    padding: 8px;
+    display: block;
+    border: 1px solid #aaa;
+    border-radius: var(--curve-circle);
+}
+
+.product-attr-color.active {
+    border: 2px solid #191919;
+}
+
+.btn-attr {
+    width: 100%;
+    background-color: #f1f1f1;
+}
+
+.quantity-box {
+    padding: 2px;
+    background-color: #f1f1f1;
+    border-radius: var(--curve-sm);
+}
+
+/* product details page css end here */
+
+/* cart page design start here */
+/* process step counter */
+.step-counter {
+    max-width: 50%;
+    padding-top: 16px;
+    margin-inline: auto;
+    font-family: var(--ff-lora);
+}
+
+.step-container {
+    position: relative;
+    text-align: center;
+    transform: translateY(-24%);
+}
+
+.step-counter .progress {
+    height: 1px;
+    width: calc(100% - 20px);
+    background-color: #191919;
+}
+
+.step-circle { 
+    width: 30px;
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+    line-height: 30px;
+    font-weight: bold;
+    border-radius: 50%;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid #191919;
+}
+
+.step-circle.active {
+    color: #fff;
+    background-color: #191919;
+}
+
+/* cart list */
+.cart-list h4 {
+    color: var(--primary);
+}
+
+.cart-list .cart-single-remover {
+    top: 4px;
+    left: 6px;
+    position: absolute;
+}
+
+.cart-list .btn-cart-close {
+    width: 24px;
+    height: 24px;
+    color: #ffffff;
+    background-color: #ff6347;
+    border-radius: var(--curve-circle);
+}
+
+.cart-list .product-info {
+    min-width: 220px;
+}
+
+.cart-list .product-info img {
+    width: 72px;
+    object-fit: cover;
+    aspect-ratio: var(--ratio-vertical);
+}
+
+.cart-list .quantity-box {
+    background-color: transparent;
+}
+
+.cart-price-info h4 {
+    color: var(--primary);
+}
+/* cart page design end here */
+
+/* footer css start */
+.payment-list img {
+    width: 48px;
+    aspect-ratio: 16/9;
+    border-radius: 2px;
+}
+/* footer css end */
